@@ -16,3 +16,21 @@ Meanwhile, the compiled output files will be generated in the `bin` folder by de
 ## Dependency Management
 
 The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+
+## Compile and Run
+
+Open the terminal and cd to `src` folder. Run the following commands.
+
+```console
+src % javac App.java
+src % java App.java
+```
+## Login Credentials
+
+**Username:** SniperMonkey123
+
+**Password:** PasswordMonkey
+
+## UML Class Diagram
+
+![UML Class Diagram](./docs/UML_Class_Diagram.png)
