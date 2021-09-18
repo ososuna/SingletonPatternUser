@@ -6,27 +6,28 @@ import classes.Window;
 public class App {
     public static void main(String[] args) throws Exception {
         
-        // String username;
-        // String password;
+        String username;
+        String password;
 
-        // User user;
+        User user;
         
-        // Scanner scanner = new Scanner(System.in);
-
-        // System.out.println("Enter username: ");
-        // username = scanner.nextLine();
-
-        // System.out.println("Enter password: ");
-        // password = scanner.nextLine();
+        Scanner scanner = new Scanner(System.in);
         
-        // if (username.equals("SniperMonkey123") &&
-        //     password.equals("PasswordMonkey")) {
-        //         user = User.instance(username, password);
-        // } else {
+        System.out.print("Enter username: ");
+        username = scanner.nextLine();
 
-        // }
+        System.out.print("Enter password: ");
+        password = scanner.nextLine();
+        
+        scanner.close();
+
+        if (username.equals("SniperMonkey123") &&
+            password.equals("PasswordMonkey")) {
+            user = User.instance(username, password);
+            Window.instance(user);    
+        } else {
+            Window.instance();
+        }
     
-        Window.instance();
-        Window.instance(User.instance("oosuna", "123"));
     }
 }
