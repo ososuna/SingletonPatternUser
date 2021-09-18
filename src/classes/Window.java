@@ -14,6 +14,8 @@ public class Window extends JFrame {
     private Date date;
     private SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 
+    static private Window _instance = null;
+
     private JPanel panel;
     private JLabel titleLabel;
     private JLabel dateLabel;
@@ -85,8 +87,6 @@ public class Window extends JFrame {
         setVisible(true);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
-
-    static private Window _instance = null;
 
     static public Window instance(User user) {
         if (_instance == null) {
