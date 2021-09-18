@@ -11,7 +11,6 @@ import javax.swing.JPanel;
 
 public class Window extends JFrame {
     
-    private User user;
     private Date date;
     private SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
 
@@ -21,7 +20,6 @@ public class Window extends JFrame {
 
     private Window(User user) {
         
-        this.user = user;
         this.date = new Date();
 
         JLabel usernameLabel;
@@ -103,7 +101,4 @@ public class Window extends JFrame {
         }
         return _instance;
     }
-
-
-
 }
