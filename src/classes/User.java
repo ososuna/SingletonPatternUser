@@ -4,6 +4,8 @@ public class User {
 
     private String username;
     private String password;
+    
+    static private User _instance = null;
 
     private User(String username, String password) {
         this.username = username;
@@ -25,8 +27,6 @@ public class User {
     public void setPassword(String password) {
         this.password = password;
     }
-
-    static private User _instance = null;
 
     static public User instance(String username, String password) {
         if (_instance == null) {
